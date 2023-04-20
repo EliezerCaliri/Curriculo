@@ -4,7 +4,7 @@ import {
     View,
     Text,
     Image,
-    TouchableOpacity,
+
 } from 'react-native';
 import Botao from '../Componentes/botaointro';
 
@@ -32,16 +32,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    botao: {
-        elevation: 5,
-        alignItems: 'center',
-        justifyContent: 'center',
-        paddingVertical: 12,
-        paddingHorizontal: 32,
-        borderRadius: 4,
-        elevation: 3,
-        backgroundColor: 'black',
-    },
     intro: {
         alignItems: 'center',
         marginBottom: 200,
@@ -50,14 +40,6 @@ const styles = StyleSheet.create({
     imagem: {
         width: 200,
         height: 200,
-    },
-    textb:{
-        fontSize: 16,
-        lineHeight: 21,
-        fontWeight: 'bold',
-        letterSpacing: 0.25,
-        color: 'white',
-    
     },
     intro1: {
         alignItems: 'center',
