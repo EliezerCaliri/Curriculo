@@ -6,6 +6,7 @@ import {
     Image,
     TouchableOpacity,
 } from 'react-native';
+import Botao from '../Componentes/botaointro';
 
 const Dados = ({navigation}) =>{
     return (
@@ -19,18 +20,10 @@ const Dados = ({navigation}) =>{
             <Text style={styles.text}>Carteira de Habilitação: A,B</Text>
 
         <View style={styles.container}>
-        <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('Home')}>
-                <Text style={styles.textb}>Inicio</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('Dados')}>
-                <Text style={styles.textb}>Dados</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('Formacao')}>
-                <Text style={styles.textb}>Formação</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('Formacao')}>
-                <Text style={styles.textb}>Experiencia</Text>
-            </TouchableOpacity>
+        <Botao titulo ="Home" acao={() => navigation.navigate("Home")}/>
+        <Botao titulo ="Dados" acao={() => navigation.navigate("Dados")}/>
+        <Botao titulo ="Formacao" acao={() => navigation.navigate("Formacao")}/>
+        <Botao titulo ="Experiencia" acao={() => navigation.navigate("Experiencia")}/>
         </View>
         </View>
     );
